@@ -1,0 +1,8 @@
+<h1>PLANET NAVIGATION</h1>
+<p>Click on the item to see the details</p>
+<div *ngIf="planets">
+    <nav class="planet-nav">
+        <li *ngFor="let planet of planets"><a routerLink="details/{{ planet.id }}">{{ planet.name }}</a></li>
+      </nav>
+      <router-outlet></router-outlet>
+</div>

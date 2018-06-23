@@ -1,0 +1,20 @@
+
+<div *ngIf="planet">
+    <h1>PLANET {{ planet.name | uppercase  }} INFO</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>{{ planet.id}}</td>
+        <td>{{ planet.name}}</td>
+        <td>{{ planet.description}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
